@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agnieszka Szczepanik Portfolio</title>
     <style>
-        body {
+        body, a {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
@@ -95,6 +95,26 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* Media Queries for Responsive Design */
+        @media only screen and (max-width: 600px) {
+            header {
+                padding: 15px 0;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 10px 0;
+            }
+
+            section {
+                margin: 60px 10px;
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -112,7 +132,7 @@
 
     <section id="about">
         <h2>O mnie</h2>
-        <p>Mam 2 lata doświadczenia... robiłam takie i takie projekty xD</p>
+        <p>Uzupełnimy xD</p>
     </section>
 
     <section id="portfolio">
@@ -134,7 +154,7 @@
 
     <section id="contact">
         <h2>Kontakt</h2>
-        <p>Mój adres mailowy to: szczepanik.agnieszkaa@gmail.com</p>
+        <p>Ze mną można się kontaktować bezpośrednio na ten adres mailowy: <a href="mailto:szczepanik.agnieszkaa@gmail.com">szczepanik.agnieszkaa@gmail.com</a></p>
     </section>
 
     <script>
